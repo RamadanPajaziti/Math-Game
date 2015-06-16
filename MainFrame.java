@@ -56,6 +56,7 @@ public class MainFrame extends JFrame {
 				if (Score.getWrong() > 5) {
 					JOptionPane.showMessageDialog(null, "Game Over");
 					score.reset();
+					score.repaint();
 					count = 0;
 					gameField.repaint();
 				}
